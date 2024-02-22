@@ -23,10 +23,10 @@ def f(x):
     return (x - 1) * (x - 2) * (x - 3) # The roots of equations x = {1, 2, 3}
 
 # Tests     
-print(dichotomy(f, 1, 1.5))  # -> 1.0078125
-print(dichotomy(f, 1, 1.5, 10 ** (-5)))  # -> 1.0000076293945312
+print(dichotomy(f, 1, 1.5))               # -> 1.0078125
+print(dichotomy(f, 1, 1.5, 10 ** (-5)))   # -> 1.0000076293945312
 print(dichotomy(f, 1, 1.5, 10 ** (-10)))  # -> 1.0000000000582077
-print(dichotomy(f, -3, 5)) # -> 1
-print(dichotomy(f, 2, 5))  # -> 2.005859375
-print(dichotomy(f, 0, 5))  # -> 3.0078125
+print(dichotomy(f, -3, 5))                # -> 1
+print(dichotomy(f, 2, 5))                 # -> 2.005859375
+print(dichotomy(f, 0, 5))                 # -> 3.0078125
     
