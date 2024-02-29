@@ -60,4 +60,4 @@ print(evaluation_root_modules(values_arr))  # -> (0.27272727272727276, 9.0)
 print(upper_lims_positive_roots(values_arr)) # -> 3.6457513110645907
 
 # Found lims (best)
-print (lower_upper_lims_positive_roots(values_arr)) # -> (((0.5-0.20710678118654754j), 2.632993161855452), (2.632993161855452, 3.6457513110645907))
+print (lower_upper_lims_positive_roots(values_arr)) # -> ((0.3797958971132712, 3.6457513110645907), (-3.6457513110645907, -0.3797958971132712))
