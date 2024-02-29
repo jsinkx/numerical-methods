@@ -16,7 +16,7 @@ def evaluation_root_modules(values):
 # Better use this theorems (№4 & 5)   
     
 # Theorem №4 (Lagrange's theorem)    
-def upper_lims_positive_roots(values):
+def upper_lims_roots(values):
     if values[0] < 0:
         values = [v * -1 for v in values]
         
@@ -36,7 +36,7 @@ def upper_lims_positive_roots(values):
     return R
 
 # Theorem №5
-def lower_upper_lims_positive_roots(values):
+def lower_upper_lims_roots(values):
     reversed_values = list(reversed(values)) 
     
     R_1_values = reversed_values
@@ -44,10 +44,10 @@ def lower_upper_lims_positive_roots(values):
     R_3_values = [v * -1 for v in reversed_values]  
     
     # count R's
-    R = upper_lims_positive_roots(values)
-    R_1 = upper_lims_positive_roots(R_1_values)
-    R_2 = upper_lims_positive_roots(R_2_values)
-    R_3 = upper_lims_positive_roots(R_3_values)
+    R = upper_lims_roots(values)
+    R_1 = upper_lims_roots(R_1_values)
+    R_2 = upper_lims_roots(R_2_values)
+    R_3 = upper_lims_roots(R_3_values)
     
     return ((1 / R_1, R), (-R_2, 1 / -R_3))
 
@@ -57,7 +57,7 @@ values_arr = [1, 2, -5, 8, -7, -3]
 print(evaluation_root_modules(values_arr))  # -> (0.27272727272727276, 9.0)
 
 # Test
-print(upper_lims_positive_roots(values_arr)) # -> 3.6457513110645907
+print(upper_lims_roots(values_arr)) # -> 3.6457513110645907
 
 # Found lims (best)
-print (lower_upper_lims_positive_roots(values_arr)) # -> ((0.3797958971132712, 3.6457513110645907), (-3.6457513110645907, -0.3797958971132712))
+print(lower_upper_lims_roots(values_arr)) # -> ((0.3797958971132712, 3.6457513110645907), (-3.6457513110645907, -0.3797958971132712))
