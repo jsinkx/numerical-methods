@@ -6,3 +6,5 @@
 -  Practical lesson 20.02.24 - **root method** - [`root-method.py`](./root-method.py)
 
 -  Practical lesson 27.02.24 - **separation of roots theorem** - [`separation-roots-theorem.py`](./separation-roots-theorem.py)
+
+-  Practical lesson 05.03.24 - **chord method** - [`chord-method.py`](./chord-method.py)
