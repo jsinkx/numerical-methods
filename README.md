@@ -8,3 +8,5 @@
 -  Practical lesson 27.02.24 - **separation of roots theorem** - [`separation-roots-theorem.py`](./separation-roots-theorem.py)
 
 -  Practical lesson 05.03.24 - **chord method** - [`chord-method.py`](./chord-method.py)
+
+-  Practical lesson 12.03.24 - **SLE Gauss's 3 methods** - [`SLE-gauss-methods.py`](./SLE-gauss-methods.py)
