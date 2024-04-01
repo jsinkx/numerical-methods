@@ -1,4 +1,6 @@
 import numpy as np
+
+# Define utils and main functions
 def back(matrix):
     roots = []
     
@@ -10,7 +12,6 @@ def back(matrix):
         roots.append(solved)
     
     return [*reversed(roots)]
-
 
 def get_support_element(row, bias = 0):
     if row[bias] == 0:
@@ -56,30 +57,41 @@ def forward_excluded(matrix):
     
     return matrix
 
-# Single division method 
+# Modification matrix with return statement
+def select_leading_element(_matrix):
+    for index in range(_matrix.shape[0]):
+        matrix = _matrix.copy()
+        _max = matrix[index:, index].flatten().argmax()
+        t = matrix[index, :].copy()
+        matrix[index, :], matrix[index + _max, :] = matrix[index + _max, :], t
+        
+    return matrix
 
+# Testing on 3 matrices
+
+# Single division method 
 INIT_MATRIX_1 = np.array([
     [5, 0, 1, 11],
     [2, 6, -2, 8],
     [-3, 2, 10, 6]
 ], dtype='float64')
 
-print(back(forward_single_div(INIT_MATRIX_1))) # -> [2.0, 1.0, 1.0000000000000002]
+print(back(forward_single_div(INIT_MATRIX_1)))  # -> [2.0, 1.0, 1.0000000000000002]
 
 # Excluded (triangle) method
-
 INIT_MATRIX_2 = np.array([
     [2, 1, 4, 16],
     [3, 2, 1, 10],
     [1, 3, 3, 16],
 ], dtype='float64')
 
-print(back(forward_excluded(INIT_MATRIX_2)))   # -> [1.0, 2.0, 3.0] 
+print(back(forward_excluded(INIT_MATRIX_2)))    # -> [1.0, 2.0, 3.0] 
 
-# INIT_MATRIX_3 = np.array([
-#     [-3, 2.099, 6, 3.901],
-#     [10, -7, 0, 7],
-#     [5, -1, 5, -6]
-# ], dtype='float64')
+INIT_MATRIX_3 = np.array([
+    [-3, 2.099, 6, 3.901],
+    [10, -7, 0, 7],
+    [5, -1, 5, -6]
+], dtype='float64')
 
-# print(back(forward_excluded(INIT_MATRIX_3)))  # ->[-72.0, 62.0, 3.0]
+# The Gauss method with the choice of the leading element
+print(back(forward_excluded(select_leading_element(INIT_MATRIX_3)))) # -> [-3.35888037320883, -5.798400533155473, 0.9992002665778078]
