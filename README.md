@@ -22,3 +22,4 @@
 ### Methods for calculating eigen values & vectors
 
 -  Practical lesson 09.04.24 - **Direct deployment & iteration methods** - [`direct-deployment-and-iterations-method.py`](./direct-deployment-and-iterations-method.py)
+-  Practical lesson 16.04.24 - **Rotation method** - [`rotation-method.py`](./rotation-method.py)
