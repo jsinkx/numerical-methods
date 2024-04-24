@@ -23,3 +23,9 @@
 
 -  Practical lesson 09.04.24 - **Direct deployment & iteration methods** - [`direct-deployment-and-iterations-method.py`](./direct-deployment-and-iterations-method.py)
 -  Practical lesson 16.04.24 - **Rotation method** - [`rotation-method.py`](./rotation-method.py)
+
+---
+
+### Methods for approximate function
+
+-  Practical lesson 23.04.24 - **Lagrange polynomial** - [`lagrange-polynomial-method.py`](./lagrange-polynomial-method.py)
