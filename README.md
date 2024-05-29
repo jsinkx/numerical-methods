@@ -16,6 +16,7 @@
 ### Methods for calculating SLE
 
 -  Practical lesson 12.03.24 - **SLE Gauss's 3 methods** - [`SLE-gauss-methods.py`](./SLE-gauss-methods.py)
+-  Practical lesson 20.03.24 - **SLE LU decomposition** - WIP
 
 ---
 
@@ -28,4 +29,17 @@
 
 ### Methods for approximate function
 
--  Practical lesson 23.04.24 - **Lagrange polynomial** - [`lagrange-polynomial-method.py`](./lagrange-polynomial-method.py)
+-  Practical lesson 24.04.24 - **Lagrange polynomial** - [`lagrange-polynomial-method.py`](./lagrange-polynomial-method.py)
+-  Practical lesson 07.05.24 - **Newtons polynomial** - WIP
+
+---
+
+### Methods for approximate function
+
+-  Practical lesson 22.05.24 - **Least squares** - [`least-squares-method.py`](./least-squares-method.py)
+
+---
+
+### Methods for differentiation and integration
+
+-  Practical lesson 28.05.24 - at paper

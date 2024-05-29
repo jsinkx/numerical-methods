@@ -5,6 +5,8 @@ def stop_criterion(x_1, x_0, eps=1e-3):
 
 # Direct deployment method
 
+# TODO: Implement this method
+
 # Iterations method
 
 def iterations_method(A, eps=1e-3):
