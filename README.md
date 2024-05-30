@@ -1,5 +1,7 @@
 # Numerical methods
 
+---
+
 ### Methods for calculating the roots of the equation
 
 -  Practical lesson 13.02.24 - **dichotomy method** - [`dichotomy-method.py`](./dichotomy-method.py)
@@ -42,4 +44,4 @@
 
 ### Methods for differentiation and integration
 
--  Practical lesson 28.05.24 - at paper
+-  Practical lesson 28.05.24 - _at paper_
