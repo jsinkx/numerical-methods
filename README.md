@@ -16,7 +16,7 @@
 ### Methods for calculating SLE
 
 -  Practical lesson 12.03.24 - **SLE Gauss's 3 methods** - [`SLE-gauss-methods.py`](./SLE-gauss-methods.py)
--  Practical lesson 20.03.24 - **SLE LU decomposition** - WIP
+-  Practical lesson 20.03.24 - **SLE LU decomposition** - [`SLE-LU-decomposition.py`](./SLE-LU-decomposition.py)
 
 ---
 
