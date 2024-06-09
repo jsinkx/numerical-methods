@@ -35,7 +35,7 @@ def lagrange_polynomial(x, y, eval_point):
            
         for j in range(n):
             # Ignore the same point
-            if j != i:
+            if j != i and x[i] != x[j]:
                 t *= (eval_point - x[j]) / (x[i] - x[j])
         
         # Add eval_point value in basis polynomial to global result 
@@ -54,3 +54,9 @@ init_x_values_2 = [-1, 0, 1, 3]
 init_y_values_2 = [2, 4, 5, 0]
 
 print(lagrange_polynomial(init_x_values_2, init_y_values_2, 0.5)) # -> 4.6875
+
+# test 3
+init_x_values_3 = [1, 1.2, 1.4, 1.6, 1.8, 1.2]
+init_y_values_3 = [0, 0.4, 0.896, 1.5008, 2.22464, 3.075712]
+
+print(lagrange_polynomial(init_x_values_3, init_y_values_3, 1))   # -> 0.0
